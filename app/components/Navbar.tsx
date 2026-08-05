@@ -1,0 +1,15 @@
+import Link from "next/link";
+
+export default function Navbar() {
+  return (
+    <nav className="fixed top-0 z-50 flex w-full items-center justify-between bg-black/90 px-6 py-4 backdrop-blur-sm">
+      <h1 className="text-xl font-bold text-orange-500">🏏 DCC</h1>
+      <div className="flex gap-6 text-sm text-gray-300">
+        <Link href="/" className="hover:text-orange-400">Home</Link>
+        <Link href="/about" className="hover:text-orange-400">About</Link>
+        <Link href="/programs" className="hover:text-orange-400">Programs</Link>
+        <Link href="/faq" className="hover:text-orange-400">FAQ</Link>
+      </div>
+    </nav>
+  );
+}
