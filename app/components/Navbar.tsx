@@ -17,6 +17,7 @@ export default function Navbar() {
         <Link href="/about" className="hover:text-orange-400">About</Link>
         <Link href="/programs" className="hover:text-orange-400">Programs</Link>
         <Link href="/faq" className="hover:text-orange-400">FAQ</Link>
+        <Link href="/contact" className="hover:text-orange-400">Contact</Link>
       </div>
 
       <div className="flex items-center gap-4">
