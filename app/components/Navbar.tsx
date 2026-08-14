@@ -23,6 +23,12 @@ export default function Navbar() {
       <div className="flex items-center gap-4">
         {session ? (
           <div className="flex items-center gap-3">
+            <Link
+              href="/dashboard"
+              className="rounded-lg bg-orange-600/20 px-3 py-1.5 text-sm font-medium text-orange-400 hover:bg-orange-600/30"
+            >
+              Dashboard
+            </Link>
             {session.user?.image && (
               <img
                 src={session.user.image}
