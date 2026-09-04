@@ -274,7 +274,7 @@ export default function ContactPage() {
               </div>
 
               <a
-                href="https://wa.me/919876543210?text=Hi%20Demigod's%20Cricket%20Club!"
+                href="https://wa.me/916281529800?text=Hi%20Demigod's%20Cricket%20Club!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block rounded-lg bg-green-600 p-4 text-center font-bold text-white transition hover:bg-green-700 hover:scale-[1.02]"

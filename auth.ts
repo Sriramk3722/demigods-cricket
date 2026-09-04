@@ -1,12 +1,7 @@
-import NextAuth from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
+import NextAuth from "@auth/nextjs"
+import Google from "@auth/nextjs/providers/google"
 
-export const { handlers, signIn, signOut, auth } = NextAuth({
-  providers: [
-    GoogleProvider({
-      clientId: process.env.AUTH_GOOGLE_ID || "",
-      clientSecret: process.env.AUTH_GOOGLE_SECRET || "",
-    }),
-  ],
+export const { handlers, auth, signIn, signOut } = NextAuth({
+  providers: [Google],
   secret: process.env.AUTH_SECRET,
-});
+})

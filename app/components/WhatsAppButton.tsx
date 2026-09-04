@@ -14,7 +14,7 @@ export default function WhatsAppButton() {
 
   return (
     <a
-      href="https://wa.me/919876543210?text=Hi%20Demigod's%20Cricket%20Club!"
+      href="https://wa.me/916281529800?text=Hi%20Demigod's%20Cricket%20Club!"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full bg-green-500 px-4 py-3 text-white shadow-lg transition hover:bg-green-600 hover:scale-105"
