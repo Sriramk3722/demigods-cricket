@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import WhatsAppButton from "@/app/components/WhatsAppButton";
-import Providers from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,12 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-black">
       <body className={inter.className}>
-        <Providers>
-          <Navbar />
-          <div className="pt-20">{children}</div>
-          <WhatsAppButton />
-          <Footer />
-        </Providers>
+        <Navbar />
+        <div className="pt-20">{children}</div>
+        <WhatsAppButton />
+        <Footer />
       </body>
     </html>
   );
