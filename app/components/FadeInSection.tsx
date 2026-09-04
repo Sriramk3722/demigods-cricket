@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 
 interface FadeInSectionProps {
   children: ReactNode;
-  delay?: number; // Optional delay for staggered animations
+  delay?: number;
 }
 
 export default function FadeInSection({ children, delay = 0 }: FadeInSectionProps) {
@@ -13,7 +13,7 @@ export default function FadeInSection({ children, delay = 0 }: FadeInSectionProp
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ amount: 0.2 }} // ← REMOVED "once: true"
       transition={{ duration: 0.8, delay: delay, ease: "easeOut" }}
     >
       {children}
