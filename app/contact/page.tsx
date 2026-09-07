@@ -249,7 +249,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-orange-400">📞 Contact</h3>
                 <p className="mt-2 text-gray-400">
                   <strong className="text-white">Phone / WhatsApp:</strong> +91
-                  98765 43210
+                  62815 29800
                 </p>
                 <p className="text-gray-400">
                   <strong className="text-white">Email:</strong>{" "}
