@@ -4,24 +4,17 @@ import FadeInSection from "./FadeInSection";
 
 export default function FAQSection() {
   return (
-    <section
-      className="relative flex min-h-screen items-center px-4 py-20"
-      style={{
-        backgroundImage: "url('/bg-faq.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="absolute inset-0 bg-black/50"></div>
-      <div className="relative z-10 mx-auto w-full max-w-4xl">
+    <section className="bg-black/60 backdrop-blur-sm px-4 py-20">
+      <div className="mx-auto max-w-4xl">
         <FadeInSection>
           <h2 className="mb-12 text-center text-4xl font-bold text-orange-500">
             Frequently Asked Questions
           </h2>
         </FadeInSection>
+
         <div className="space-y-4">
           <FadeInSection delay={0.1}>
-            <details className="rounded-lg bg-black/60 backdrop-blur-md p-4">
+            <details className="rounded-lg bg-black/70 backdrop-blur-md p-4">
               <summary className="cursor-pointer font-bold text-orange-400">
                 Who can join Demigod's Cricket Club?
               </summary>
@@ -31,8 +24,9 @@ export default function FAQSection() {
               </p>
             </details>
           </FadeInSection>
+
           <FadeInSection delay={0.2}>
-            <details className="rounded-lg bg-black/60 backdrop-blur-md p-4">
+            <details className="rounded-lg bg-black/70 backdrop-blur-md p-4">
               <summary className="cursor-pointer font-bold text-orange-400">
                 When and where are the practices?
               </summary>
@@ -42,8 +36,9 @@ export default function FAQSection() {
               </p>
             </details>
           </FadeInSection>
+
           <FadeInSection delay={0.3}>
-            <details className="rounded-lg bg-black/60 backdrop-blur-md p-4">
+            <details className="rounded-lg bg-black/70 backdrop-blur-md p-4">
               <summary className="cursor-pointer font-bold text-orange-400">
                 Do I need to bring my own equipment?
               </summary>
@@ -54,6 +49,7 @@ export default function FAQSection() {
             </details>
           </FadeInSection>
         </div>
+
         <FadeInSection delay={0.4}>
           <div className="mt-12 text-center">
             <h2 className="text-3xl font-bold text-orange-500 md:text-4xl">
