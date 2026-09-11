@@ -146,7 +146,7 @@ export default function ContactPage() {
                       <label className="block text-sm font-medium text-gray-200">Phone</label>
                       <input type="tel" name="phone" value={formData.phone} onChange={handleChange}
                         className="mt-1 w-full rounded-lg bg-black/60 border border-gray-600 px-4 py-3 text-white focus:border-orange-500 focus:outline-none"
-                        placeholder="+91 98765 43210" />
+                        placeholder="+91 62815 29800" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-200">Subject *</label>
@@ -183,7 +183,7 @@ export default function ContactPage() {
                 </div>
                 <div className="rounded-lg bg-black/70 backdrop-blur-md p-6 border border-orange-500/30">
                   <h3 className="text-xl font-bold text-orange-400">📞 Contact</h3>
-                  <p className="mt-2 text-gray-200"><strong className="text-white">Phone:</strong> +91 98765 43210</p>
+                  <p className="mt-2 text-gray-200"><strong className="text-white">Phone:</strong> +91 62815 29800</p>
                   <p className="text-gray-200"><strong className="text-white">Email:</strong> contact@demigodscricket.com</p>
                 </div>
                 <div className="rounded-lg bg-black/70 backdrop-blur-md p-6 border border-orange-500/30">
@@ -192,7 +192,7 @@ export default function ContactPage() {
                   <p className="text-gray-200"><strong className="text-white">Sun:</strong> 7:00 AM – 12:00 PM</p>
                   <p className="text-gray-200"><strong className="text-white">Weekdays:</strong> By appointment</p>
                 </div>
-                <a href="https://wa.me/919876543210?text=Hi%20Demigod's%20Cricket%20Club!"
+                <a href="https://wa.me/916281529800?text=Hi%20Demigod's%20Cricket%20Club!"
                   target="_blank" rel="noopener noreferrer"
                   className="block rounded-lg bg-green-600 p-4 text-center font-bold text-white transition hover:bg-green-700 hover:scale-[1.02]">
                   💬 Chat with us on WhatsApp
