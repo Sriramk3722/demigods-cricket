@@ -12,7 +12,7 @@ export default function TestimonialsSection() {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-black/80"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 mx-auto w-full max-w-6xl">
         <FadeInSection>
           <h2 className="mb-12 text-center text-4xl font-bold text-orange-500">
@@ -21,8 +21,8 @@ export default function TestimonialsSection() {
         </FadeInSection>
         <div className="grid gap-6 md:grid-cols-2">
           <FadeInSection delay={0.1}>
-            <div className="rounded-lg bg-black/70 backdrop-blur-sm border border-gray-700 p-6">
-              <p className="text-gray-200">
+            <div className="rounded-lg bg-black/60 backdrop-blur-md border border-gray-500/40 p-6">
+              <p className="text-gray-100">
                 "Joining Demigod's was the best decision I made. The coaching is
                 top-notch and the community is incredible."
               </p>
@@ -30,8 +30,8 @@ export default function TestimonialsSection() {
             </div>
           </FadeInSection>
           <FadeInSection delay={0.2}>
-            <div className="rounded-lg bg-black/70 backdrop-blur-sm border border-gray-700 p-6">
-              <p className="text-gray-200">
+            <div className="rounded-lg bg-black/60 backdrop-blur-md border border-gray-500/40 p-6">
+              <p className="text-gray-100">
                 "The matches are competitive and well-organized. I've improved my
                 game significantly since joining."
               </p>

@@ -12,7 +12,7 @@ export default function HeroSection() {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
       <div className="relative z-10">
         <FadeInSection delay={0.1}>
           <h1 className="text-5xl font-bold text-orange-500 md:text-7xl">
@@ -20,10 +20,10 @@ export default function HeroSection() {
           </h1>
         </FadeInSection>
         <FadeInSection delay={0.2}>
-          <p className="mt-4 text-lg text-gray-200 md:text-2xl">
+          <p className="mt-4 text-lg text-gray-100 md:text-2xl">
             Your Passport to Revisit Cricket Stats
           </p>
-          <p className="mt-2 text-sm text-gray-400">
+          <p className="mt-2 text-sm text-gray-200">
             70% Win Rate • 346 Victories
           </p>
         </FadeInSection>
@@ -41,15 +41,15 @@ export default function HeroSection() {
           <div className="mt-12 flex gap-12 text-center">
             <div>
               <p className="text-3xl font-bold text-orange-400">325+</p>
-              <p className="text-sm text-gray-300">Active Players</p>
+              <p className="text-sm text-gray-200">Active Players</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-orange-400">550+</p>
-              <p className="text-sm text-gray-300">Matches Played</p>
+              <p className="text-sm text-gray-200">Matches Played</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-orange-400">70%</p>
-              <p className="text-sm text-gray-300">Win Rate</p>
+              <p className="text-sm text-gray-200">Win Rate</p>
             </div>
           </div>
         </FadeInSection>
