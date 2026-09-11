@@ -4,7 +4,7 @@ import FadeInSection from "./FadeInSection";
 
 export default function ProgramsSection() {
   return (
-    <section className="bg-black/60 backdrop-blur-sm px-4 py-20">
+    <section className="px-4 py-20">
       <div className="mx-auto max-w-6xl">
         <FadeInSection>
           <h2 className="mb-12 text-center text-4xl font-bold text-orange-500">
