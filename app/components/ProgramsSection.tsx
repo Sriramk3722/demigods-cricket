@@ -5,16 +5,15 @@ import FadeInSection from "./FadeInSection";
 export default function ProgramsSection() {
   return (
     <section
-      className="relative px-4 py-20"
+      className="relative flex min-h-screen items-center px-4 py-20"
       style={{
         backgroundImage: "url('/bg-programs.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
       }}
     >
       <div className="absolute inset-0 bg-black/80"></div>
-      <div className="relative z-10 mx-auto max-w-6xl">
+      <div className="relative z-10 mx-auto w-full max-w-6xl">
         <FadeInSection>
           <h2 className="mb-12 text-center text-4xl font-bold text-orange-500">
             Our Programs

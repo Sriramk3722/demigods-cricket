@@ -10,7 +10,6 @@ export default function HeroSection() {
         backgroundImage: "url('/bg-hero.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
       }}
     >
       <div className="absolute inset-0 bg-black/70"></div>
