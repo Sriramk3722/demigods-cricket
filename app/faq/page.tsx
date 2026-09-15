@@ -4,20 +4,20 @@ import FadeInSection from "@/app/components/FadeInSection";
 
 export default function FAQPage() {
   return (
-    <main
-      className="relative min-h-screen text-white"
-      style={{
-        backgroundImage: "url('/bg-faq.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-      }}
-    >
-      <div className="absolute inset-0 bg-black/60"></div>
+    <main className="relative text-white">
+      <div
+        className="fixed inset-0 z-0"
+        style={{
+          backgroundImage: "url('/bg-faq.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
 
       <div className="relative z-10 px-4 py-20">
         <div className="mx-auto max-w-4xl">
-          {/* HEADER */}
           <FadeInSection>
             <h1 className="text-center text-4xl font-bold text-orange-500 md:text-5xl">
               Frequently Asked Questions
@@ -27,10 +27,9 @@ export default function FAQPage() {
             </p>
           </FadeInSection>
 
-          {/* FAQ LIST */}
           <div className="mt-10 space-y-4">
             <FadeInSection delay={0.1}>
-              <details className="rounded-lg bg-black/60 backdrop-blur-md p-4">
+              <details className="rounded-lg bg-black/70 backdrop-blur-md p-4">
                 <summary className="cursor-pointer font-bold text-orange-400">
                   Who can join Demigod's Cricket Club?
                 </summary>
@@ -40,7 +39,7 @@ export default function FAQPage() {
               </details>
             </FadeInSection>
             <FadeInSection delay={0.2}>
-              <details className="rounded-lg bg-black/60 backdrop-blur-md p-4">
+              <details className="rounded-lg bg-black/70 backdrop-blur-md p-4">
                 <summary className="cursor-pointer font-bold text-orange-400">
                   How much does it cost to join?
                 </summary>
@@ -50,7 +49,7 @@ export default function FAQPage() {
               </details>
             </FadeInSection>
             <FadeInSection delay={0.3}>
-              <details className="rounded-lg bg-black/60 backdrop-blur-md p-4">
+              <details className="rounded-lg bg-black/70 backdrop-blur-md p-4">
                 <summary className="cursor-pointer font-bold text-orange-400">
                   When and where are the practice sessions?
                 </summary>
@@ -60,7 +59,7 @@ export default function FAQPage() {
               </details>
             </FadeInSection>
             <FadeInSection delay={0.4}>
-              <details className="rounded-lg bg-black/60 backdrop-blur-md p-4">
+              <details className="rounded-lg bg-black/70 backdrop-blur-md p-4">
                 <summary className="cursor-pointer font-bold text-orange-400">
                   Do I need to bring my own equipment?
                 </summary>
@@ -70,7 +69,7 @@ export default function FAQPage() {
               </details>
             </FadeInSection>
             <FadeInSection delay={0.5}>
-              <details className="rounded-lg bg-black/60 backdrop-blur-md p-4">
+              <details className="rounded-lg bg-black/70 backdrop-blur-md p-4">
                 <summary className="cursor-pointer font-bold text-orange-400">
                   What if it rains?
                 </summary>
@@ -81,7 +80,6 @@ export default function FAQPage() {
             </FadeInSection>
           </div>
 
-          {/* CTA */}
           <FadeInSection delay={0.6}>
             <div className="mt-12 text-center">
               <a

@@ -4,20 +4,22 @@ import FadeInSection from "@/app/components/FadeInSection";
 
 export default function AboutPage() {
   return (
-    <main
-      className="relative min-h-screen text-white"
-      style={{
-        backgroundImage: "url('/bg-testimonials.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-      }}
-    >
-      <div className="absolute inset-0 bg-black/60"></div>
+    <main className="relative text-white">
+      {/* FIXED BACKGROUND IMAGE */}
+      <div
+        className="fixed inset-0 z-0"
+        style={{
+          backgroundImage: "url('/bg-testimonials.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
 
+      {/* CONTENT */}
       <div className="relative z-10 px-4 py-20">
         <div className="mx-auto max-w-4xl">
-          {/* HEADER */}
           <FadeInSection>
             <h1 className="text-center text-4xl font-bold text-orange-500 md:text-5xl">
               About Demigod's Cricket Club
@@ -27,9 +29,8 @@ export default function AboutPage() {
             </p>
           </FadeInSection>
 
-          {/* OUR STORY */}
           <FadeInSection delay={0.1}>
-            <div className="mt-12 rounded-lg bg-black/60 backdrop-blur-md p-6">
+            <div className="mt-12 rounded-lg bg-black/70 backdrop-blur-md p-6">
               <h2 className="text-2xl font-bold text-orange-400">📖 Our Story</h2>
               <p className="mt-2 text-gray-200 leading-relaxed">
                 Founded in 2020, Demigod's Cricket Club started with a group of 20
@@ -41,9 +42,8 @@ export default function AboutPage() {
             </div>
           </FadeInSection>
 
-          {/* COACHING STAFF */}
           <FadeInSection delay={0.2}>
-            <div className="mt-8 rounded-lg bg-black/60 backdrop-blur-md p-6">
+            <div className="mt-8 rounded-lg bg-black/70 backdrop-blur-md p-6">
               <h2 className="text-2xl font-bold text-orange-400">👨‍🏫 Our Coaching Team</h2>
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 <div className="rounded-lg bg-black/50 p-4">
@@ -66,9 +66,8 @@ export default function AboutPage() {
             </div>
           </FadeInSection>
 
-          {/* CORE VALUES */}
           <FadeInSection delay={0.3}>
-            <div className="mt-8 rounded-lg bg-black/60 backdrop-blur-md p-6">
+            <div className="mt-8 rounded-lg bg-black/70 backdrop-blur-md p-6">
               <h2 className="text-2xl font-bold text-orange-400">⭐ Our Core Values</h2>
               <div className="mt-4 grid grid-cols-3 gap-4 text-center">
                 <div className="rounded-lg bg-black/50 p-4">
@@ -87,7 +86,6 @@ export default function AboutPage() {
             </div>
           </FadeInSection>
 
-          {/* CTA */}
           <FadeInSection delay={0.4}>
             <div className="mt-12 text-center">
               <a

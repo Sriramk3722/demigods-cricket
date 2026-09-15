@@ -4,20 +4,20 @@ import FadeInSection from "@/app/components/FadeInSection";
 
 export default function ProgramsPage() {
   return (
-    <main
-      className="relative min-h-screen text-white"
-      style={{
-        backgroundImage: "url('/bg-programs.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-      }}
-    >
-      <div className="absolute inset-0 bg-black/60"></div>
+    <main className="relative text-white">
+      <div
+        className="fixed inset-0 z-0"
+        style={{
+          backgroundImage: "url('/bg-programs.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
 
       <div className="relative z-10 px-4 py-20">
         <div className="mx-auto max-w-6xl">
-          {/* HEADER */}
           <FadeInSection>
             <h1 className="text-center text-4xl font-bold text-orange-500 md:text-5xl">
               Our Programs
@@ -27,10 +27,9 @@ export default function ProgramsPage() {
             </p>
           </FadeInSection>
 
-          {/* PROGRAM CARDS */}
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <FadeInSection delay={0.1}>
-              <div className="rounded-lg bg-black/60 backdrop-blur-md p-6 text-center border border-orange-500/40 hover:border-orange-500 transition">
+              <div className="rounded-lg bg-black/70 backdrop-blur-md p-6 text-center border border-orange-500/30">
                 <div className="text-4xl">🏆</div>
                 <h3 className="mt-4 text-xl font-bold text-orange-400">Demigod's Pro</h3>
                 <p className="mt-2 text-sm text-gray-200">
@@ -39,7 +38,7 @@ export default function ProgramsPage() {
               </div>
             </FadeInSection>
             <FadeInSection delay={0.2}>
-              <div className="rounded-lg bg-black/60 backdrop-blur-md p-6 text-center border border-orange-500/40 hover:border-orange-500 transition">
+              <div className="rounded-lg bg-black/70 backdrop-blur-md p-6 text-center border border-orange-500/30">
                 <div className="text-4xl">🎯</div>
                 <h3 className="mt-4 text-xl font-bold text-orange-400">Demigod's Drona</h3>
                 <p className="mt-2 text-sm text-gray-200">
@@ -48,7 +47,7 @@ export default function ProgramsPage() {
               </div>
             </FadeInSection>
             <FadeInSection delay={0.3}>
-              <div className="rounded-lg bg-black/60 backdrop-blur-md p-6 text-center border border-orange-500/40 hover:border-orange-500 transition">
+              <div className="rounded-lg bg-black/70 backdrop-blur-md p-6 text-center border border-orange-500/30">
                 <div className="text-4xl">🌱</div>
                 <h3 className="mt-4 text-xl font-bold text-orange-400">Demigod's Eklavya</h3>
                 <p className="mt-2 text-sm text-gray-200">
@@ -57,7 +56,7 @@ export default function ProgramsPage() {
               </div>
             </FadeInSection>
             <FadeInSection delay={0.4}>
-              <div className="rounded-lg bg-black/60 backdrop-blur-md p-6 text-center border border-orange-500/40 hover:border-orange-500 transition">
+              <div className="rounded-lg bg-black/70 backdrop-blur-md p-6 text-center border border-orange-500/30">
                 <div className="text-4xl">🏏</div>
                 <h3 className="mt-4 text-xl font-bold text-orange-400">Free Trial</h3>
                 <p className="mt-2 text-sm text-gray-200">
@@ -67,31 +66,24 @@ export default function ProgramsPage() {
             </FadeInSection>
           </div>
 
-          {/* HOW TO JOIN */}
           <FadeInSection delay={0.5}>
-            <div className="mt-16 rounded-lg bg-black/60 backdrop-blur-md p-6 md:p-8">
+            <div className="mt-16 rounded-lg bg-black/70 backdrop-blur-md p-6 md:p-8">
               <h2 className="text-2xl font-bold text-orange-400 text-center">
                 How to Join Demigod's Cricket Club
               </h2>
               <div className="mt-6 grid gap-4 md:grid-cols-3">
                 <div className="rounded-lg bg-black/50 p-4 text-center">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-orange-600 font-bold">
-                    1
-                  </span>
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-orange-600 font-bold">1</span>
                   <h4 className="mt-2 font-bold text-white">Fill the Form</h4>
                   <p className="text-sm text-gray-300">Contact us via WhatsApp or the contact form.</p>
                 </div>
                 <div className="rounded-lg bg-black/50 p-4 text-center">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-orange-600 font-bold">
-                    2
-                  </span>
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-orange-600 font-bold">2</span>
                   <h4 className="mt-2 font-bold text-white">Trial Session</h4>
                   <p className="text-sm text-gray-300">Visit us for a free trial session.</p>
                 </div>
                 <div className="rounded-lg bg-black/50 p-4 text-center">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-orange-600 font-bold">
-                    3
-                  </span>
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-orange-600 font-bold">3</span>
                   <h4 className="mt-2 font-bold text-white">Join the Club</h4>
                   <p className="text-sm text-gray-300">We'll assign you to the right team.</p>
                 </div>
@@ -99,7 +91,6 @@ export default function ProgramsPage() {
             </div>
           </FadeInSection>
 
-          {/* CTA */}
           <FadeInSection delay={0.6}>
             <div className="mt-12 text-center">
               <a

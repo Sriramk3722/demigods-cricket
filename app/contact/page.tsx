@@ -49,7 +49,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="relative min-h-screen text-white">
+    <main className="relative text-white">
       {/* FIXED BACKGROUND IMAGE */}
       <div
         className="fixed inset-0 z-0"
@@ -59,13 +59,12 @@ export default function ContactPage() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* CONTENT */}
       <div className="relative z-10 px-4 py-20">
         <div className="mx-auto max-w-6xl">
-          {/* HEADER */}
           <FadeInSection>
             <h1 className="text-center text-4xl font-bold text-orange-500 md:text-5xl">
               Contact Us
@@ -75,38 +74,6 @@ export default function ContactPage() {
             </p>
           </FadeInSection>
 
-          {/* HOW TO JOIN */}
-          <FadeInSection delay={0.1}>
-            <div className="mt-12 rounded-lg bg-black/70 backdrop-blur-md p-6 border border-orange-500/30">
-              <h2 className="text-xl font-bold text-orange-400">
-                How to Join Demigod's Cricket Club
-              </h2>
-              <p className="mt-2 text-gray-200">
-                Joining Demigod's Cricket Club in Bangalore is simple and open to
-                all working professionals who want to play leather ball cricket.
-              </p>
-              <div className="mt-4 grid gap-4 md:grid-cols-2">
-                <div className="flex items-start gap-3">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-orange-600 font-bold">1</span>
-                  <p className="text-gray-200">Fill up the registration form.</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-orange-600 font-bold">2</span>
-                  <p className="text-gray-200">Our team will get in touch within 2–3 days.</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-orange-600 font-bold">3</span>
-                  <p className="text-gray-200">Visit us for a trial session at our ground.</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-orange-600 font-bold">4</span>
-                  <p className="text-gray-200">We'll assign you to the right team based on skill.</p>
-                </div>
-              </div>
-            </div>
-          </FadeInSection>
-
-          {/* FORM + INFO */}
           <div className="mt-8 grid gap-8 md:grid-cols-2">
             {/* FORM */}
             <FadeInSection delay={0.2}>
@@ -146,7 +113,7 @@ export default function ContactPage() {
                       <label className="block text-sm font-medium text-gray-200">Phone</label>
                       <input type="tel" name="phone" value={formData.phone} onChange={handleChange}
                         className="mt-1 w-full rounded-lg bg-black/60 border border-gray-600 px-4 py-3 text-white focus:border-orange-500 focus:outline-none"
-                        placeholder="+91 62815 29800" />
+                        placeholder="+91 98765 43210" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-200">Subject *</label>
@@ -183,7 +150,7 @@ export default function ContactPage() {
                 </div>
                 <div className="rounded-lg bg-black/70 backdrop-blur-md p-6 border border-orange-500/30">
                   <h3 className="text-xl font-bold text-orange-400">📞 Contact</h3>
-                  <p className="mt-2 text-gray-200"><strong className="text-white">Phone:</strong> +91 62815 29800</p>
+                  <p className="mt-2 text-gray-200"><strong className="text-white">Phone:</strong> +91 98765 43210</p>
                   <p className="text-gray-200"><strong className="text-white">Email:</strong> contact@demigodscricket.com</p>
                 </div>
                 <div className="rounded-lg bg-black/70 backdrop-blur-md p-6 border border-orange-500/30">
@@ -192,7 +159,7 @@ export default function ContactPage() {
                   <p className="text-gray-200"><strong className="text-white">Sun:</strong> 7:00 AM – 12:00 PM</p>
                   <p className="text-gray-200"><strong className="text-white">Weekdays:</strong> By appointment</p>
                 </div>
-                <a href="https://wa.me/916281529800?text=Hi%20Demigod's%20Cricket%20Club!"
+                <a href="https://wa.me/919876543210?text=Hi%20Demigod's%20Cricket%20Club!"
                   target="_blank" rel="noopener noreferrer"
                   className="block rounded-lg bg-green-600 p-4 text-center font-bold text-white transition hover:bg-green-700 hover:scale-[1.02]">
                   💬 Chat with us on WhatsApp
