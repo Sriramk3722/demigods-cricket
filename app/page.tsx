@@ -7,11 +7,9 @@ export default function Home() {
   return (
     <main className="relative">
       <div
-        className="fixed inset-0 z-0"
+        className="fixed inset-0 z-0 bg-mobile-fix"
         style={{
           backgroundImage: "url('/bg-hero.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>

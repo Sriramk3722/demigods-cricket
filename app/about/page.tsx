@@ -5,19 +5,15 @@ import FadeInSection from "@/app/components/FadeInSection";
 export default function AboutPage() {
   return (
     <main className="relative text-white">
-      {/* FIXED BACKGROUND IMAGE */}
       <div
-        className="fixed inset-0 z-0"
+        className="fixed inset-0 z-0 bg-mobile-fix"
         style={{
           backgroundImage: "url('/bg-testimonials.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
-      {/* CONTENT */}
       <div className="relative z-10 px-4 py-20">
         <div className="mx-auto max-w-4xl">
           <FadeInSection>

@@ -6,11 +6,9 @@ export default function ProgramsPage() {
   return (
     <main className="relative text-white">
       <div
-        className="fixed inset-0 z-0"
+        className="fixed inset-0 z-0 bg-mobile-fix"
         style={{
           backgroundImage: "url('/bg-programs.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>

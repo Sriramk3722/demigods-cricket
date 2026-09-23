@@ -50,19 +50,15 @@ export default function ContactPage() {
 
   return (
     <main className="relative text-white">
-      {/* FIXED BACKGROUND IMAGE */}
       <div
-        className="fixed inset-0 z-0"
+        className="fixed inset-0 z-0 bg-mobile-fix"
         style={{
           backgroundImage: "url('/bg-contact.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
-      {/* CONTENT */}
       <div className="relative z-10 px-4 py-20">
         <div className="mx-auto max-w-6xl">
           <FadeInSection>
@@ -75,7 +71,6 @@ export default function ContactPage() {
           </FadeInSection>
 
           <div className="mt-8 grid gap-8 md:grid-cols-2">
-            {/* FORM */}
             <FadeInSection delay={0.2}>
               <div className="rounded-lg bg-black/70 backdrop-blur-md p-6 border border-orange-500/30">
                 <h2 className="text-xl font-bold text-orange-400">Send us a Message</h2>
@@ -137,7 +132,6 @@ export default function ContactPage() {
               </div>
             </FadeInSection>
 
-            {/* INFO */}
             <FadeInSection delay={0.3}>
               <div className="space-y-4">
                 <div className="rounded-lg bg-black/70 backdrop-blur-md p-6 border border-orange-500/30">
